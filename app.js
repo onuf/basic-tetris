@@ -82,8 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
         nextRnd = Math.floor(Math.random()*tetrominoes.length)
         curT = tetrominoes[rndT][curRot]
     }
-    
-    setNew()
 
     // draw the tetromino
     function draw() {
@@ -217,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
             timeID = null
         } else {
             // the start option
+            setNew()
             draw()
             // move the tetromino down every second
             timeID = setInterval(moveDown, 1000)
