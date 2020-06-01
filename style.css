@@ -16,6 +16,10 @@ button {
     padding: 8px 12px;
 }
 
+button:active {
+    background-color: #ffa280;
+}
+
 p {
     font-weight: bold;
     font-family: monospace;
